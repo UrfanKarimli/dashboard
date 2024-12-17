@@ -1,25 +1,23 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import MyHeader from './components/header/MyHeader.vue';
+import SideMenu from './components/sidemenu/SideMenu.vue';
 </script>
 
 <template>
-  <header>
-
-    <div class="">
-      <!-- <HelloWorld msg="You did it!" /> -->
-
-      <nav class=" flex gap-4">
-        <RouterLink class=" text-red-700"  to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="w-full flex ">
+    <div class="left">
+      <SideMenu />
     </div>
-  </header>
+    <div class="righ grow bg-[#f6f6f6] ">
+      <MyHeader />
+      <main class=" px-10">
+        <RouterView />
+      </main>
+      
+    </div>
+  </div>
 
-  <RouterView />
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>

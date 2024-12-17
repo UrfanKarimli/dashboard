@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
