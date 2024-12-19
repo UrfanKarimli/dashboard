@@ -5,19 +5,19 @@ import {cards} from "./mockDatas/cards"
 
 <template>
   <div class="w-full flex flex-col">
-    <h2 class="text-[32px] font-bold text-[#202224]">İdarəetmə Paneli</h2>
+    <h2 class="my-7 text-[32px] font-bold text-text-light dark:text-text-dark">İdarəetmə Paneli</h2>
     <div class="flex items-center justify-between">
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="card flex flex-col justify-between bg-white min-w-[230px] w-[24%] h-[170px] p-4 rounded-xl"
+        class="card flex flex-col justify-between bg-background-light dark:bg-background-dark min-w-[230px] w-[24%] h-[170px] p-4 rounded-xl"
       >
         <div class="flex justify-between">
           <div class="flex flex-col justify-between">
-            <span class="text-base font-semibold">
+            <span class="text-base font-semibold text-text-light text-opacity-75 dark:text-text-dark dark:text-opacity-75">
               {{ card.title }}
             </span>
-            <span class="font-bold text-[28px]">
+            <span class="font-bold text-[28px] text-text-light  dark:text-text-dark">
               {{ card.value }}
             </span>
           </div>
@@ -33,7 +33,7 @@ import {cards} from "./mockDatas/cards"
               <component :is="card.trendIcon" class="h-5 w-5" />
               <span>{{ card.trend }}</span>
             </div>
-            <span>{{ card.trendText }}</span>
+            <span class=" text-[#606060] dark:text-text-dark">{{ card.trendText }}</span>
           </div>
         </div>
       </div>

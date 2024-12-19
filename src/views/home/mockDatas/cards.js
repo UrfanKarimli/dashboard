@@ -17,7 +17,7 @@ export const cards = [
     trendIcon: BxTrendingUp,
     trendColor: "text-[#00B69B]",
     trend: "8.5%",
-    trendText: "Up from yesterday",
+    trendText: "Dünənə nisbətən artım",
   },
   {
     title: "Sifarişlər",
@@ -28,7 +28,7 @@ export const cards = [
     trendIcon: BxTrendingUp,
     trendColor: "text-[#00B69B]",
     trend: "1.5%",
-    trendText: "Up from past week",
+    trendText: "Keçən həftəyə nisbətən artım",
   },
   {
     title: "Satışlar",
@@ -39,7 +39,7 @@ export const cards = [
     trendIcon: BxTrendingDown,
     trendColor: "text-[#F93C65]",
     trend: "4.5%",
-    trendText: "Down from yesterday",
+    trendText: "Dünənə nisbətən azalma",
   },
   {
     title: "Gözlənilənlər",
@@ -50,6 +50,6 @@ export const cards = [
     trendIcon: BxTrendingUp,
     trendColor: "text-[#00B69B]",
     trend: "1.5%",
-    trendText: "Up from yesterday",
+    trendText: "Dünənə nisbətən artım",
   },
 ];

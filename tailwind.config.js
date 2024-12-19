@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: true,
+  darkMode: 'class',
   content: [],
   theme: {
     fontFamily: {
@@ -19,6 +19,22 @@ export default {
 
     extend: {
       colors: {
+        primary: {
+          light: '#f6f6f6',
+          dark: '#1B2431',
+        },
+        background: {
+          light: '#ffffff',
+          dark: '#273142',
+        },
+        text: {
+          light: '#202224',
+          dark: '#ffffff',
+        },
+        border: {
+          light: '#E0E0E0',
+          dark: '#E0E0E0',
+        },
         'primary-50': 'rgb(var(--primary-50))',
         'primary-100': 'rgb(var(--primary-100))',
         'primary-200': 'rgb(var(--primary-200))',
