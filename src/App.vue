@@ -11,10 +11,10 @@ import SideMenu from './components/sidemenu/SideMenu.vue';
     </div>
     <div class="righ grow bg-[#f6f6f6] ">
       <MyHeader />
-      <main class=" px-10">
+      <main class=" px-10 min-h-[90vh]">
         <RouterView />
       </main>
-      
+
     </div>
   </div>
 

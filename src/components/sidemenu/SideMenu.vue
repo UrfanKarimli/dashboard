@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" flex flex-col gap-8 justify-start overflow-hidden px-2 pt-4 h-full transition-all duration-300 ease-in-out bg-[#fff]"
+    class=" flex flex-col  gap-8 justify-start border-r overflow-hidden px-2 pt-4 h-full transition-all duration-300 ease-in-out bg-[#fff]"
     :style="{ width: menuWidth }">
 
     <button @click="toggleMenu" class="flex h-7 items-center justify-end bg-transparent">

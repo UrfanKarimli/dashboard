@@ -14,7 +14,7 @@
       <AkChevronDownSmall class=" text-[#565656] h-3 w-3" />
     </div>
     <div v-if="showProfile" ref="profileRef"
-      class="absolute -right-5 top-12  w-[200px] h-[85px] overflow-y-scroll no-scrollbar p-0 pt-4 rounded-[8px] border border-[#B1BDCF] shadow-[-4px_4px_10px_#fff,4px_4px_10px_#fff] table-btns bg-white">
+      class="absolute -right-5 top-[53px]  w-[200px] h-[85px] overflow-y-scroll no-scrollbar p-0 pt-4 rounded-[8px] border border-[#B1BDCF] shadow-[-4px_4px_10px_#fff,4px_4px_10px_#fff] table-btns bg-white">
       <ul>
         <li>
           <RouterLink  to="/">

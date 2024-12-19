@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <span 
+    <span
       @click="toggleNotifications"
       class="relative cursor-pointer close-notifications">
       <IoSharpNotifications class="text-[#838FA4] h-6 w-6" />
@@ -12,7 +12,7 @@
     <div
       v-if="showNotifications"
       ref="notificationsRef"
-      class="absolute left-1/2 top-12 -translate-x-1/2 w-[254px] h-[85px] overflow-y-scroll no-scrollbar p-0 pt-4 rounded-[8px] border border-[#B1BDCF] shadow-[-4px_4px_10px_#fff,4px_4px_10px_#fff] table-btns bg-white">
+      class="absolute left-1/2 top-[47px] -translate-x-1/2 w-[254px] h-[85px] overflow-y-scroll no-scrollbar p-0 pt-4 rounded-[8px] border border-[#B1BDCF] shadow-[-4px_4px_10px_#fff,4px_4px_10px_#fff] table-btns bg-white">
       <div class=" border-b px-3 font-semibold text-[#404040]">
         Bildirişlər
       </div  >
