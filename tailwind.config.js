@@ -5,8 +5,8 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      'poppins':["Poppins", 'sans-serif',],
-      'inter': [  "Inter", 'sans-serif',]
+      'poppins': ["Poppins", 'sans-serif',],
+      'inter': ["Inter", 'sans-serif',]
     },
     container: {
       center: true,
@@ -33,7 +33,11 @@ export default {
         },
         border: {
           light: '#E0E0E0',
-          dark: '#E0E0E0',
+          dark: '#cfcfcf13',
+        },
+        buttonBg: {
+          light: '#FCFDFD',
+          dark: '#323D4E'
         },
         'primary-50': 'rgb(var(--primary-50))',
         'primary-100': 'rgb(var(--primary-100))',
@@ -58,7 +62,7 @@ export default {
         'surface-800': 'rgb(var(--surface-800))',
         'surface-900': 'rgb(var(--surface-900))',
         'surface-950': 'rgb(var(--surface-950))'
-    }
+      }
     },
   },
   plugins: [],

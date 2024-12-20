@@ -31,6 +31,9 @@ body::-webkit-scrollbar {
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
+[data-theme="dark"] {
+  --vt-c-indigo: #fff !important;
+}
 
 /* semantic color variables for this project */
 :root {

@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="hover:bg-[#f4f4f5]   px-2 py-2 rounded-full flex items-center">
+    <div :class="[showBg, 'hover:bg-[#f4f4f5] px-2 py-2 rounded-full flex items-center']">
       <span @click="toggleNotifications" class="relative cursor-pointer close-notifications">
         <IoSharpNotifications class="text-[#4880FF] h-6 w-6" />
         <span
@@ -20,11 +20,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { IoSharpNotifications } from '@kalimahapps/vue-icons';
 
 const showNotifications = ref(false);
 const notificationsRef = ref(null);
+const showBg = computed(() => (showNotifications.value ? 'bg-[#f4f4f5]' : 'bg-transparent'));
 
 const toggleNotifications = () => {
   showNotifications.value = !showNotifications.value;
@@ -48,6 +49,7 @@ onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside);
 });
 </script>
+
 
 <style scoped>
 .no-scrollbar::-webkit-scrollbar {
