@@ -56,8 +56,6 @@ function handleUpdate(timeline) {
   color: #fff;
   background-color: #4880FF;
 }
-/* .custom-svg-style > svg > g > g > text > tspan {
-  color: #f87171; 
-} */
+
 
 </style>
