@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <div class=" flex items-center gap-4 justify-between flex-wrap mt-4 mb-16 h-[400px] overflow-y-hidden">
+  <div class=" flex items-center gap-4 justify-between flex-wrap mt-4 mb-16 h-[380px] overflow-y-hidden">
     <CardCarusel />
     <CardCarusel />
     <CardCarusel />
